@@ -5,6 +5,17 @@ import javax.persistence.Id;
 @Entity
 public class Employee {
 
+        private  String role;
+        private  String name;
+        private String company;
+        private @Id @GeneratedValue Long id;
+
+        public Employee() {}
+
+        public Employee(String name, String role) {
+                this.name = name;
+                this.role = role;
+        }
         public String getName() {
                 return name;
         }
@@ -28,10 +39,5 @@ public class Employee {
         public void setId(Long id) {
                 this.id = id;
         }
-
-        private  String name;
-        private String company;
-        private @Id @GeneratedValue Long id;
-
 
 }
