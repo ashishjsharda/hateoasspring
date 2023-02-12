@@ -16,6 +16,14 @@ public class Employee {
                 this.name = name;
                 this.role = role;
         }
+
+        public String getRole() {
+                return role;
+        }
+
+        public void setRole(String role) {
+                this.role = role;
+        }
         public String getName() {
                 return name;
         }
